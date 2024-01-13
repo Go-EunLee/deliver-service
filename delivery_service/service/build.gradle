@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.9'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+// service에는 소스 파일이 없기 때문에 jar 파일로 패키징 할 것이 없다.
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = false
+}
