@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Business
 public class StoreMenuBusiness {
-    private StoreMenuService storeMenuService;
-    private StoreMenuConverter storeMenuConverter;
+    private final StoreMenuService storeMenuService;
+    private final StoreMenuConverter storeMenuConverter;
 
     public StoreMenuResponse register(
             StoreMenuRegisterRequest request

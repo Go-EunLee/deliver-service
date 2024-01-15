@@ -17,6 +17,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 @Component
 @RequiredArgsConstructor
 public class UserSessionResolver implements HandlerMethodArgumentResolver {
+
     private final UserService userService;
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
