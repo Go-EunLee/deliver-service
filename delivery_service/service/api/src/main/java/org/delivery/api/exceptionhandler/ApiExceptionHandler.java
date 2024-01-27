@@ -1,4 +1,4 @@
-package org.delivery.api.exception.handler;
+package org.delivery.api.exceptionhandler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.delivery.api.common.api.Api;
